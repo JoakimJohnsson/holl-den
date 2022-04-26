@@ -4,6 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faTimes, faFilter, faArrowDown19, faArrowUp19, faArrowDownAZ, faArrowUpAZ} from "@fortawesome/free-solid-svg-icons";
 
 const FilterForm = ({filter, setFilter, setSortType, sortType, reverse, setReverse}) => {
+    
 
     return (
         <div className={"form-group"}>
