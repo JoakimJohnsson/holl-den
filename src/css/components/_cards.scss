@@ -1,0 +1,309 @@
+@import '../helpers/variables';
+
+.card__dark {
+  @include box-shadow__dark;
+  border: none;
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pagination {
+    font-weight: bold;
+  }
+}
+
+.artist-card__simple {
+  min-height: 200px;
+  font-size: .7rem;
+  text-transform: capitalize;
+
+  a {
+    line-height: 1.2;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: $color-black;
+    color: $color-white;
+
+    span {
+      z-index: 2;
+      padding: .5rem;
+      background: $color-black;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      transition: $transition-base;
+      background: $color-near-black;
+      transform: scale(.95);
+      color: $color-white;
+    }
+
+    img {
+      z-index: 1;
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: none;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      opacity: .2;
+    }
+  }
+
+  @media screen and (min-width: 350px) {
+    font-size: .8rem;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 1.2rem;
+  }
+}
+
+.track-card-dynamic {
+  width: 100%;
+  background: $color-black__trans-hard;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  audio {
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      width: 80%;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 50%;
+    }
+  }
+  .track-card-dynamic__info {
+    text-transform: capitalize;
+    display: inline-block;
+    width: 100%;
+  }
+  .track-card-dynamic__image {
+    width: 100%;
+  }
+  input[type=range] {
+    height: 5px;
+    width: 75%;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+    cursor: pointer;
+    &.is-playing {
+      background: $color-secondary;
+    }
+    &.is-paused {
+      background: $color-tertiary;
+    }
+    @include media-breakpoint-up(md) {
+      width: 50%;
+    }
+  }
+  .minimized {
+    height: 0;
+  }
+}
+
+.track-card {
+  background: $color-near-black;
+  color: $color-white;
+  font-size: 90%;
+
+  &:hover,
+  &:active,
+  &:focus {
+    transition: $transition-base;
+
+    .track-card__image {
+      opacity: .9;
+    }
+  }
+
+  .track-card__image {
+    height: 75px;
+    width: 75px;
+  }
+
+  .track-card__content {
+    display: flex;
+
+    .track-card__content-inner {
+      align-items: flex-start;
+    }
+
+    @include media-breakpoint-up(sm) {
+      min-width: 400px;
+    }
+  }
+
+  .label {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .small {
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+
+  .track-card__audio {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.record-card {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transition: $transition-base;
+    transform: scale(.95);
+
+    .record-card__content {
+      background-image: linear-gradient(to bottom, $color-black__trans-super-light 0%, $color-black__trans-hard 85%);
+    }
+  }
+
+  img {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .record-card__content {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, $color-black__trans-super-light 30%, $color-black__trans-hard 85%);
+
+    a {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      text-decoration: none;
+    }
+    div {
+      z-index: 3;
+      padding: .5rem;
+      background-color: $color-black;
+      p {
+        text-shadow: $text-shadow__normal;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.card-title {
+  color: $color-white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 80%;
+}
+
+.card-sub-title {
+  font-size: 80%;
+  text-transform: capitalize;
+}
+
+.card-index__round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  background: $color-light-grey;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.record-card-with-tracks {
+  margin-bottom: 1.5rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.hd-episode-card-wrapper {
+  img {
+    border: none;
+  }
+  .card-title {
+    font-size: 1.8rem;
+  }
+  .card-sub-title {
+    font-size: 100%;
+  }
+  .hd-episode-image-info {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+
+    &.haller {
+      background-color: darkgreen;
+    }
+    &.haller-inte {
+      background-color: darkred;
+    }
+    &.haller-lika {
+      background-color: orangered;
+    }
+  }
+  .green-icon {
+    color: darkgreen;
+  }
+  .red-icon {
+    color: darkred;
+  }
+  .card {
+    opacity: .8;
+  }
+  a {
+    color: $color-white;
+    &:hover {
+      text-decoration: none;
+    }
+    .card:hover {
+      opacity: 1;
+      transition: $transition-base;
+    }
+  }
+}

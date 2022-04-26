@@ -1,0 +1,174 @@
+// Colors
+$color-white: #fff;
+$color-black: #000;
+$color-black__trans-hard: rgba(0, 0, 0, .95);
+$color-black__trans-medium: rgba(0, 0, 0, .87);
+$color-black__trans-light: rgba(0, 0, 0, .8);
+$color-black__trans-super-light: rgba(0, 0, 0, .2);
+$color-dark-grey: #151515;
+$color-near-black: #0a0a0a;
+$color-light-grey: #444;
+$color-vibrant-pink: #ff88cc;
+$color-vibrant-green: #88ffcc;
+$color-vibrant-yellow: #fffe88;
+$color-vibrant-blue: #88a1ff;
+
+// Complementary colors
+$color-vibrant-purple: #ce88ff;
+$color-vibrant-orange: #ffb588;
+$color-vibrant-lime: #acff88;
+$color-super-vibrant-orange: #ff6c4c;
+
+// Gradients
+
+$color-gradient__black: linear-gradient(45deg, $color-dark-grey 25%, lighten($color-dark-grey, 5%) 50%, $color-dark-grey 75%);
+
+// Color variables
+$color-primary: $color-vibrant-pink;
+$color-primary__lighten: #ffcfeb;
+$color-secondary: $color-vibrant-green;
+$color-secondary__lighten: #b8ffe0;
+$color-tertiary: $color-vibrant-yellow;
+$color-tertiary__lighten: #fffea0;
+$color-quaternary: $color-vibrant-blue;
+$color-quaternary__lighten: #a0c6ff;
+$color-bg: $color-black;
+$color-bg__lighten: lighten($color-bg, 50%);
+$color-border: $color-light-grey;
+
+// Fonts
+$tbf-font__regular: 'Fira Sans', sans-serif;
+$tbf-font__heading: 'Secular one', cursive, sans-serif;
+$tbf-font__logo-1: 'Bangers', cursive, sans-serif;
+$tbf-font__logo-2: 'Bebas Neue', cursive, sans-serif;
+$tbf-font__logo-3: 'Audiowide', cursive, sans-serif;
+$tbf-font__logo-4: 'Nova Flat', cursive, sans-serif;
+$tbf-font__logo-5: 'Kelly Slab', cursive, sans-serif;
+$tbf-font__logo-6: 'UnifrakturMaguntia', cursive, sans-serif;
+$tbf-font__logo-7: 'Creepster', cursive, sans-serif;
+$tbf-font__logo-8: 'Iceland', cursive, sans-serif;
+$tbf-font__logo-9: 'Playball', cursive, sans-serif;
+$tbf-font__logo-10: 'Special Elite', cursive, sans-serif;
+$tbf-font__logo-11: 'Staatliches', cursive, sans-serif;
+$tbf-font__logo-12: 'Lobster', cursive, sans-serif;
+$tbf-font__logo-13: 'Bungee', cursive, sans-serif;
+$tbf-font__logo-14: 'Itim', cursive, sans-serif;
+$tbf-font__logo-15: 'Reenie Beanie', cursive, sans-serif;
+$tbf-font__logo-16: 'Graduate', cursive, sans-serif;
+$tbf-font__logo-17: 'Secular one', cursive, sans-serif;
+
+// Text shadow
+$text-shadow__normal: 0 0 8px $color-black;
+
+// Bootstrap
+$font-family-sans-serif: $tbf-font__regular;
+$headings-font-family: $tbf-font__heading;
+$font-family-base: $font-family-sans-serif;
+$spacer: 1rem;
+$primary: $color-primary;
+$secondary: $color-secondary;
+$info: $color-tertiary;
+$success: $color-tertiary;
+$link-hover-color: $color-primary__lighten;
+$link-color: $color-primary;
+$body-bg: $color-dark-grey;
+$body-color: $color-white;
+$font-size-base: 1rem;
+$nav-tabs-link-hover-border-color: $color-dark-grey $color-dark-grey #444;
+
+// Bootstrap navbar styles
+$btn-disabled-opacity:              .30;
+$navbar-padding-y:                  $spacer / 2;
+$navbar-padding-x:                  $spacer;
+$text-muted:                        $color-light-grey;
+$navbar-nav-link-padding-x:         .5rem;
+$navbar-toggler-padding-y:          .25rem;
+$navbar-toggler-padding-x:          .75rem;
+$navbar-toggler-font-size:          $font-size-base * 1.5;
+$navbar-dark-color:                 $color-primary;
+$navbar-dark-hover-color:           $color-primary__lighten;
+$navbar-dark-active-color:          $color-white;
+$navbar-dark-disabled-color:        rgba($color-white, .25);
+$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-dark-toggler-border-color:  rgba($color-white, .1);
+$dark: $color-black;
+$navbar-dark-brand-color:                 $navbar-dark-active-color;
+$navbar-dark-brand-hover-color:           $navbar-dark-active-color;
+$card-bg: $color-near-black;
+$card-cap-bg: $color-black;
+$card-cap-color: $color-tertiary;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1640px
+);
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1600px
+);
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:               1rem;
+$modal-footer-margin-between:       .5rem;
+
+$modal-dialog-margin:               .5rem;
+$modal-dialog-margin-y-sm-up:       1.75rem;
+
+$modal-content-color:               $color-white;
+$modal-content-bg:                  $color-dark-grey;
+$modal-content-border-color:        rgba($color-black, .2);
+$modal-content-box-shadow-xs:       0 .25rem .5rem rgba($color-black, .5);
+$modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($color-black, .5);
+
+$modal-backdrop-bg:                 $color-black;
+$modal-backdrop-opacity:            .5;
+$modal-header-padding-y:            1rem;
+$modal-header-padding-x:            1rem;
+$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x; // Keep this for backwards compatibility
+
+// List group
+$list-group-bg:                     transparent;
+$list-group-border-color:           $color-border;
+
+// Input group
+$input-group-addon-bg: $color-white;
+
+// Pagination
+$pagination-color:                  $color-tertiary;
+$pagination-bg:                     transparent;
+$pagination-border-color:           transparent;
+
+$pagination-hover-color:            $color-light-grey;
+$pagination-hover-bg:               $color-tertiary__lighten;
+$pagination-hover-border-color:     $color-tertiary__lighten;
+
+$pagination-active-color:           $color-tertiary__lighten;
+$pagination-active-bg:              transparent;
+$pagination-active-border-color:    $color-tertiary__lighten;
+
+$pagination-disabled-color:         $color-tertiary__lighten;
+$pagination-disabled-bg:            transparent;
+$pagination-disabled-border-color:  transparent;
+
+$gray-300: $color-light-grey;
+
+$transition-base: all .45s ease-in-out;
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+@import '../helpers/variables';
+@import '../helpers/mixins';
+
+// Wrappers
+.standard-box-wrapper__near-dark {
+  @include box-padding-standard;
+  background: none;
+  @include media-breakpoint-up(sm) {
+    background: $color-near-black;
+  }
+}
+
+.standard-box-wrapper__transparent {
+  @include box-padding-standard;
+  background: none;
+  @include media-breakpoint-up(sm) {
+  }
+}
+
+// Columns
+.standard-fullwidth-column {
+  @include make-col-ready();
+  padding-right: 15px;
+}
+
+.standard-main-column {
+  padding-bottom: 5rem;
+  @include make-col-ready();
+  padding-right: 15px;
+  @include media-breakpoint-up(lg) {
+    @include make-col(8);
+    padding-right: 0;
+  }
+
+  .standard-main-column__section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.start-page-main-column {
+  padding-bottom: 3rem;
+  @include make-col-ready();
+  padding-right: 15px;
+  @include media-breakpoint-up(xl) {
+    @include make-col(8);
+    padding-right: 0;
+  }
+
+  .standard-main-column__section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.standard-secondary-column {
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  @include make-col-ready();
+  @include media-breakpoint-up(lg) {
+    @include make-col(4);
+    padding-top: 0;
+  }
+}
+
+.start-page-secondary-column {
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  @include make-col-ready();
+  @include media-breakpoint-up(xl) {
+    @include make-col(4);
+    padding-top: 0;
+  }
+}
+
+// Containers
+.standard-container {
+  @include container-padding-standard;
+}
+
+.border-lg-none {
+  @include media-breakpoint-up(lg) {
+    border: none !important;
+  }
+}
+
+// Progress bar - set height
+.progress {
+  height: 5px;
+}
+
+.collapse.dont-collapse-sm {
+  @include media-breakpoint-up(lg){
+    display: block;
+    height: auto !important;
+  }
+}
+
+// Sticky top positioning
+.sticky-top {
+  &.top-1 {
+    top: 1rem;
+  }
+}
