@@ -14,7 +14,7 @@ const FilterForm = ({filter, setFilter, setSortType, sortType, reverse, setRever
                     <input id="filter"
                            name="filter"
                            type="text"
-                           className="form-control bg-white"
+                           className="form-control bg-white text-black"
                            placeholder={"Filtrera på namn eller årtal"}
                            value={filter}
                            onChange={event => setFilter(event.target.value)}
