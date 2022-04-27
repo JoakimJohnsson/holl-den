@@ -21,7 +21,7 @@ const EpisodeCard = ({episode}) => {
         (
             <div className="hd-episode-card-wrapper col-12 col-md-6 col-xl-4 mb-4 mb-sm-5">
                 <div className={"col-12 h-100"}>
-                    <Link className={""} to={`/${episode.id}`}>
+                    <Link className={"text-decoration-none"} to={`/${episode.id}`}>
                         <div className={"card h-100"}>
                             <div className={"hd-episode-image-wrapper position-relative"}>
                                 <img src={movieImage} className="card-img-top" alt={`Movie ${episode.movieName}`}/>

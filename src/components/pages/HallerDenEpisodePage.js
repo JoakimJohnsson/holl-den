@@ -24,7 +24,7 @@ const HallerDenEpisodePage = () => {
     }, [id, episode]);
 
     return episode ? (
-            <main className="container-fluid standard-container bg-light text-black">
+            <main className="container pt-5 text-black">
                 <div className={"row"}>
                     <div className={"col-12 col-sm-8 offset-sm-2"}>
                         <Link className={"btn btn-primary mb-3"} to={"/"}><FontAwesomeIcon icon={"chevron-left"} className={"me-2"}/>Tillbaka</Link>

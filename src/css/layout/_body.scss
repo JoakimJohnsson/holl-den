@@ -11,14 +11,6 @@ body {
   @include media-breakpoint-up(md) {
     font-size: 1rem;
   }
-  background: $color-dark-grey;
-}
-
-html {
-  -webkit-tap-highlight-color: transparent;
-}
-
-body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -28,72 +20,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 #root {
   position: relative;
   min-height: 100vh;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
-}
-
-.alert {
-  display: inline-block;
-
-  p {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-input[type=range] {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 100%; /* Specific width is required for Firefox. */
-  background: transparent; /* Otherwise white in Chrome */
-}
-
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-}
-
-input[type=range]:focus {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-}
-
-input[type=range]::-ms-track {
-  width: 100%;
-  cursor: pointer;
-
-  /* Hides the slider so custom styles can be added */
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-
-/* Special styling for WebKit/Blink */
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 15px;
-  width: 15px;
-  border-radius: 10px;
-  background: $color-primary;
-  margin-top: 0px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-}
-
-/* All the same stuff for Firefox */
-input[type=range]::-moz-range-thumb {
-  height: 15px;
-  width: 15px;
-  border-radius: 10px;
-  background: $color-primary;
-  border: none;
-}
-
-/* All the same stuff for IE */
-input[type=range]::-ms-thumb {
-  height: 15px;
-  width: 15px;
-  border-radius: 10px;
-  background: $color-primary;
 }
