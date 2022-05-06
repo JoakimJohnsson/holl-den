@@ -17,6 +17,7 @@ export const getParticipantById = (id) => {
 
 export const getImageName = (movieName) => {
     let imageName = movieName.replace('å', 'a').replace('ä', 'a').replace('ö', 'o').replace('Å', 'a').replace('Ä', 'a').replace('Ö', 'o');
+    console.log("imagename", imageName.toLowerCase().replace(/[^a-z]+/g, ""));
     return imageName.toLowerCase().replace(/[^a-z]+/g, "");
 }
 

@@ -40,25 +40,24 @@ const FilterForm = ({filter, setFilter, setSortType, sortType, reverse, setRever
                         <option value="movieName">Namn</option>
                         <option value="movieYear">Årtal</option>
                     </select>
-                    <div className={"input-group-append"}>
-                        <button
-                            className={"btn btn-primary "}
-                            onClick={() => setReverse(!reverse)}
-                            aria-label={"Omvänd ordning"}>
-                            {
-                                sortType === "movieName" ?
-                                    reverse ?
-                                        <FontAwesomeIcon icon={faArrowUpAZ} aria-label={"Sortera a till z"}/>
-                                        :
-                                        <FontAwesomeIcon icon={faArrowDownAZ} aria-label={"Sortera z till a"}/>
+                    <button
+                        className={"btn btn-primary "}
+                        type={"button"}
+                        onClick={() => setReverse(!reverse)}
+                        aria-label={"Omvänd ordning"}>
+                        {
+                            sortType === "movieName" ?
+                                reverse ?
+                                    <FontAwesomeIcon icon={faArrowUpAZ} aria-label={"Sortera a till z"}/>
                                     :
-                                    reverse ?
-                                        <FontAwesomeIcon icon={faArrowUp19} aria-label={"Sortera 0 till 9"}/>
-                                        :
-                                        <FontAwesomeIcon icon={faArrowDown19} aria-label={"Sortera 9 till 0"}/>
-                            }
-                        </button>
-                    </div>
+                                    <FontAwesomeIcon icon={faArrowDownAZ} aria-label={"Sortera z till a"}/>
+                                :
+                                reverse ?
+                                    <FontAwesomeIcon icon={faArrowUp19} aria-label={"Sortera 0 till 9"}/>
+                                    :
+                                    <FontAwesomeIcon icon={faArrowDown19} aria-label={"Sortera 9 till 0"}/>
+                        }
+                    </button>
                 </div>
             </div>
         </div>

@@ -82,6 +82,9 @@ import turnerhooch from "./haller-den-images/turnerhooch.jpg";
 import wargames from "./haller-den-images/wargames.jpg";
 import weddingcrashers from "./haller-den-images/weddingcrashers.jpg";
 import whoframedrogerrabbit from "./haller-den-images/whoframedrogerrabbit.jpg";
+import terminator from "./haller-den-images/terminator.jpg";
+import terminatorjudgementday from "./haller-den-images/terminatorjudgementday.jpg";
+import ratatouille from "./haller-den-images/ratatouille.jpeg";
 
 export const hallerDenImages = {
     "amadeus": amadeus,
@@ -167,5 +170,8 @@ export const hallerDenImages = {
     "turnerhooch": turnerhooch,
     "wargames": wargames,
     "weddingcrashers": weddingcrashers,
-    "whoframedrogerrabbit": whoframedrogerrabbit
+    "whoframedrogerrabbit": whoframedrogerrabbit,
+    "terminator": terminator,
+    "terminatorjudgementday": terminatorjudgementday,
+    "ratatouille": ratatouille
 }

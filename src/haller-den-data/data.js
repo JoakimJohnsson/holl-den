@@ -1916,6 +1916,98 @@ export const Episodes = [
                 "opinion": true
             }
         ]
+    },
+    {
+        "id": 84,
+        "movieName": "Jagad",
+        "movieYear": "1993",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 2,
+                "opinion": true
+            },
+            {
+                "participantId": 3,
+                "opinion": true
+            },
+            {
+                "participantId": 4,
+                "opinion": true
+            }
+        ]
+    },
+    {
+        "id": 85,
+        "movieName": "Terminator",
+        "movieYear": "1984",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 2,
+                "opinion": true
+            },
+            {
+                "participantId": 3,
+                "opinion": true
+            },
+            {
+                "participantId": 4,
+                "opinion": true
+            }
+        ]
+    },
+    {
+        "id": 86,
+        "movieName": "Terminator 2: Judgement Day",
+        "movieYear": "1991",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 2,
+                "opinion": true
+            },
+            {
+                "participantId": 3,
+                "opinion": true
+            },
+            {
+                "participantId": 4,
+                "opinion": true
+            },
+            {
+                "participantId": 16,
+                "opinion": true
+            }
+        ]
+    },
+    {
+        "id": 87,
+        "movieName": "Ratatouille",
+        "movieYear": "2007",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 3,
+                "opinion": true
+            },
+            {
+                "participantId": 4,
+                "opinion": true
+            }
+        ]
     }
 ]
 
@@ -1994,5 +2086,10 @@ export const Participants = [
         "id": 15,
         "firstName": "Julia",
         "lastName": "Finnsiö"
+    },
+    {
+        "id": 16,
+        "firstName": "Nils",
+        "lastName": "Mattsson"
     }
 ]
