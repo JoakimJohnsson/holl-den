@@ -15,6 +15,11 @@ export const getParticipantById = (id) => {
     return Participants.find(p => p.id === parseInt(id));
 }
 
+export const getParticipantInitials = (participantId) => {
+    const participant = getParticipantById(participantId);
+    return participant.firstName.charAt(0) + participant.lastName.charAt(0);
+}
+
 export const getImageName = (movieName) => {
     let imageName = movieName.replace('å', 'a').replace('ä', 'a').replace('ö', 'o').replace('Å', 'a').replace('Ä', 'a').replace('Ö', 'o');
     console.log("imagename", imageName.toLowerCase().replace(/[^a-z]+/g, ""));
