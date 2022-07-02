@@ -1,6 +1,6 @@
 export const Episodes = [
     {
-        "id": 1,
+        "id": 5548,
         "movieName": "Robocop",
         "movieYear": "1987",
         "opinions": [
@@ -27,7 +27,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 2,
+        "id": 6951,
         "movieName": "Turner & Hooch",
         "movieYear": "1989",
         "opinions": [
@@ -50,7 +50,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 3,
+        "id": 377,
         "movieName": "Terror på Elm Street",
         "movieYear": "1984",
         "opinions": [
@@ -77,7 +77,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 4,
+        "id": 754,
         "movieName": "Face/Off",
         "movieYear": "1997",
         "opinions": [
@@ -100,7 +100,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 5,
+        "id": 602,
         "movieName": "Independence day",
         "movieYear": "1996",
         "opinions": [
@@ -123,7 +123,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 6,
+        "id": 2614,
         "movieName": "24-timmarsjakten",
         "movieYear": "1987",
         "opinions": [
@@ -146,7 +146,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 7,
+        "id": 9535,
         "movieName": "Analyze this",
         "movieYear": "1999",
         "opinions": [
@@ -173,7 +173,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 8,
+        "id": 881,
         "movieName": "På heder och samvete",
         "movieYear": "1992",
         "opinions": [
@@ -200,7 +200,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 9,
+        "id": 19995,
         "movieName": "Avatar",
         "movieYear": "2009",
         "opinions": [
@@ -227,7 +227,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 10,
+        "id": 319,
         "movieName": "True romance",
         "movieYear": "1993",
         "opinions": [
@@ -250,7 +250,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 11,
+        "id": 402,
         "movieName": "Basic instinct",
         "movieYear": "1987",
         "opinions": [
@@ -277,7 +277,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 12,
+        "id": 492,
         "movieName": "Being John Malkovich",
         "movieYear": "1999",
         "opinions": [
@@ -304,7 +304,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 13,
+        "id": 9671,
         "movieName": "Crocodile Dundee",
         "movieYear": "1986",
         "opinions": [
@@ -327,7 +327,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 14,
+        "id": 744,
         "movieName": "Top gun",
         "movieYear": "1986",
         "opinions": [
@@ -350,7 +350,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 15,
+        "id": 6950,
         "movieName": "Outbreak - I farozonen",
         "movieYear": "1995",
         "opinions": [
@@ -373,7 +373,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 16,
+        "id": 9326,
         "movieName": "Den vilda jakten på stenen",
         "movieYear": "1984",
         "opinions": [
@@ -396,7 +396,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 17,
+        "id": 856,
         "movieName": "Who framed Roger Rabbit?",
         "movieYear": "1987",
         "opinions": [
@@ -423,7 +423,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 18,
+        "id": 1541,
         "movieName": "Thelma & Louise",
         "movieYear": "1991",
         "opinions": [
@@ -450,7 +450,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 19,
+        "id": 623,
         "movieName": "En fisk som heter Wanda",
         "movieYear": "1988",
         "opinions": [
@@ -473,7 +473,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 20,
+        "id": 100,
         "movieName": "Lock, stock and two smoking barrels",
         "movieYear": "1998",
         "opinions": [

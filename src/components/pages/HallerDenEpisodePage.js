@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {getEpisodeById, getImageName, setImageInfo} from "../../haller-den-data/serviceFunctions";
+import {getEpisodeById, getImageName, setImageInfo, TMDB_GET_MOVIE_URL, TMDB_KEY} from "../../haller-den-data/serviceFunctions";
 import EpisodePageOpinions from "../haller-den-components/EpisodePageOpinions";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link, useParams} from "react-router-dom";
@@ -40,6 +40,9 @@ const HallerDenEpisodePage = () => {
                                 <div className={"card-body"}>
                                     <h2 className={"card-title mb-0 "}>{episode.movieName} </h2>
                                     <p className={"card-sub-title"}>{episode.movieYear}</p>
+                                    <p className={"card-sub-title"}>
+                                        <a href={TMDB_GET_MOVIE_URL + episode.id + TMDB_KEY}>Gå till film</a>
+                                    </p>
                                     {
                                         episode.opinions &&
                                         episode.opinions.map(opinion => <EpisodePageOpinions key={opinion.participantId} opinion={opinion}/>)
