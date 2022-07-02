@@ -4,12 +4,13 @@ import EpisodePageOpinions from "../haller-den-components/EpisodePageOpinions";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link, useParams} from "react-router-dom";
 import {hallerDenImages} from "../../haller-den-data/images";
+import {faChevronLeft, faMeh} from "@fortawesome/free-solid-svg-icons";
 
 const HallerDenEpisodePage = () => {
     const [trimmedMovieName, setTrimmedMovieName] = useState("placeholder");
     const [imageInfoClass, setImageInfoClass] = useState("");
     const [imageInfoMessage, setImageInfoMessage] = useState("");
-    const [imageInfoIcon, setImageInfoIcon] = useState("meh");
+    const [imageInfoIcon, setImageInfoIcon] = useState(faMeh);
     const [episode, setEpisode] = useState([]);
     const {id} = useParams();
 
@@ -24,10 +25,10 @@ const HallerDenEpisodePage = () => {
     }, [id, episode]);
 
     return episode ? (
-            <main className="container pt-5 text-black">
+            <main className="container py-5 text-black">
                 <div className={"row"}>
                     <div className={"col-12 col-sm-8 offset-sm-2"}>
-                        <Link className={"btn btn-primary mb-3"} to={"/"}><FontAwesomeIcon icon={"chevron-left"} className={"me-2"}/>Tillbaka</Link>
+                        <Link className={"btn btn-primary mb-3"} to={"/"}><FontAwesomeIcon icon={faChevronLeft} className={"me-2"}/>Tillbaka</Link>
                         <div className={"hd-episode-card-wrapper text-white"}>
                             <div className={"card opacity-5"}>
                                 <div className={"hd-episode-image-wrapper position-relative"}>

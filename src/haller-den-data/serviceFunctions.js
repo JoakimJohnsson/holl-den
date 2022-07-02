@@ -1,4 +1,5 @@
 import {Episodes, Participants} from "./data";
+import {faGrinHearts, faFrown, faMeh} from "@fortawesome/free-solid-svg-icons";
 
 export const getAllEpisodes = () => {
     return Episodes;
@@ -43,7 +44,7 @@ export const clearInput = (setFilter) => {
     setFilter('')
 }
 
-export const setImageInfo = (setImageInfoClass, setImageInfoMessage, setImageInfoIcon, episode, faGrinHearts, faFrown, faMeh) => {
+export const setImageInfo = (setImageInfoClass, setImageInfoMessage, setImageInfoIcon, episode) => {
     const status = hallerDenStatus(episode);
     if (status === 0) {
         setImageInfoClass("haller-lika");

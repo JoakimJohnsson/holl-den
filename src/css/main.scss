@@ -30,6 +30,12 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+.tmdb-logo {
+  width: 100px;
+  border: none;
+
+}
+
 #root {
   position: relative;
   min-height: 100vh;
@@ -200,15 +206,5 @@ label {
       opacity: 1;
       transition: $transition-base;
     }
-  }
-}
-
-// Footer
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  &.article {
-    position: initial;
   }
 }
