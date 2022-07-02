@@ -62,4 +62,4 @@ export const setImageInfo = (setImageInfoClass, setImageInfoMessage, setImageInf
 }
 
 export const TMDB_GET_MOVIE_URL = "https://api.themoviedb.org/3/movie/";
-export const TMDB_KEY = "?api_key=fd704954fd54b4c501b8ae4bb7115fc9";
+export const TMDB_KEY = "?api_key=fd704954fd54b4c501b8ae4bb7115fc9&language=sv-SE";
