@@ -1,11 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {hallerDenImages} from '../../haller-den-data/images';
-import {getImageName, getParticipantById, IMDB__URL, setImageInfo, TMDB_GET_MOVIE_URL, TMDB_KEY} from "../../haller-den-data/serviceFunctions";
+import {getImageName, getParticipantById, setImageInfo, TMDB_GET_MOVIE_URL, TMDB_KEY} from "../../haller-den-data/serviceFunctions";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGrinHearts, faFrown, faMeh} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 import EpisodeCardOpinions from "./EpisodeCardOpinions";
-import {faImdb} from "@fortawesome/free-brands-svg-icons";
 
 const EpisodeCard = ({episode}) => {
     const trimmedMovieName = getImageName(episode.movieName);
