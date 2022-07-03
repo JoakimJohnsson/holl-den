@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {hallerDenImages} from '../../haller-den-data/images';
-import {getImageName, getParticipantById, setImageInfo} from "../../haller-den-data/serviceFunctions";
+import {getImageName, getParticipantById, IMDB__URL, setImageInfo, TMDB_GET_MOVIE_URL, TMDB_KEY} from "../../haller-den-data/serviceFunctions";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGrinHearts, faFrown, faMeh} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 import EpisodeCardOpinions from "./EpisodeCardOpinions";
+import {faImdb} from "@fortawesome/free-brands-svg-icons";
 
 const EpisodeCard = ({episode}) => {
     const trimmedMovieName = getImageName(episode.movieName);
@@ -13,12 +14,19 @@ const EpisodeCard = ({episode}) => {
     const [imageInfoMessage, setImageInfoMessage] = useState("");
     const [imageInfoIcon, setImageInfoIcon] = useState("meh");
     const mapLength = episode.opinions.length;
+    const [movie, setMovie] = useState({});
 
     useEffect(() => {
         setImageInfo(setImageInfoClass, setImageInfoMessage, setImageInfoIcon, episode, faGrinHearts, faFrown, faMeh)
     }, [episode]);
 
-    return episode ?
+    useEffect(() => {
+        fetch(TMDB_GET_MOVIE_URL + episode.id + TMDB_KEY)
+            .then(response => response.json())
+            .then(data => setMovie(data));
+    }, [episode.id]);
+
+    return episode && movie ?
         (
             <div className="hd-episode-card-wrapper col-12 col-md-6 col-xl-4 mb-4 mb-sm-5">
                 <div className={"col-12 h-100"}>
@@ -33,7 +41,11 @@ const EpisodeCard = ({episode}) => {
                             <div className={"card-body d-flex flex-column justify-content-between"}>
                                 <div>
                                     <h1 className={"card-title mb-0"}>{episode.movieName}</h1>
-                                    <p className={"card-sub-title"}>{episode.movieYear}</p>
+                                    <p className={"card-sub-title"}>
+                                        <span className={"me-2"}>{episode.movieYear}</span>
+                                        <span className={"me-2"}>-</span>
+                                        <span>TMDb betyg: {movie.vote_average}</span>
+                                    </p>
                                     <p className={"text-uppercase mb-1 fw-bold"}>Medverkande:</p>
                                     <p>
                                         {episode.opinions.map(
