@@ -1,14 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {hallerDenImages} from '../../haller-den-data/images';
-import {fetchAndSetMovie, getImageName, getParticipantById, setImageInfo} from "../../haller-den-data/serviceFunctions";
+import {fetchAndSetMovie, getParticipantById, setImageInfo, TMDB_GET_IMAGE_URL} from "../../haller-den-data/serviceFunctions";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGrinHearts, faFrown, faMeh} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 import EpisodeCardOpinions from "./EpisodeCardOpinions";
 
 const EpisodeCard = ({episode}) => {
-    const trimmedMovieName = getImageName(episode.movieName);
-    const movieImage = hallerDenImages[trimmedMovieName];
     const [imageInfoClass, setImageInfoClass] = useState("");
     const [imageInfoMessage, setImageInfoMessage] = useState("");
     const [imageInfoIcon, setImageInfoIcon] = useState(faMeh);
@@ -30,7 +27,7 @@ const EpisodeCard = ({episode}) => {
                     <Link className={"text-decoration-none"} to={`/${episode.id}`}>
                         <div className={"card h-100"}>
                             <div className={"hd-episode-image-wrapper position-relative"}>
-                                <img src={movieImage} className="card-img-top" alt={`Movie ${episode.movieName}`}/>
+                                <img src={TMDB_GET_IMAGE_URL + "w780" + movie.backdrop_path} className="card-img-top" alt={`Movie ${episode.movieName}`}/>
                                 <div className={`hd-episode-image-info font-weight-bold ${imageInfoClass}`}>
                                     <FontAwesomeIcon icon={imageInfoIcon} size="2x" aria-label={imageInfoMessage}/>
                                 </div>

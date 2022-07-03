@@ -2,19 +2,16 @@ import React, {useEffect, useState} from 'react';
 import {
     fetchAndSetMovie,
     getEpisodeById,
-    getImageName,
     IMDB_URL,
-    setImageInfo
+    setImageInfo, TMDB_GET_IMAGE_URL
 } from "../../haller-den-data/serviceFunctions";
 import EpisodePageOpinions from "../haller-den-components/EpisodePageOpinions";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link, useParams} from "react-router-dom";
-import {hallerDenImages} from "../../haller-den-data/images";
 import {faChevronLeft, faMeh, faQuoteRight} from "@fortawesome/free-solid-svg-icons";
 import {faImdb} from "@fortawesome/free-brands-svg-icons";
 
 const HallerDenEpisodePage = () => {
-    const [trimmedMovieName, setTrimmedMovieName] = useState("placeholder");
     const [imageInfoClass, setImageInfoClass] = useState("");
     const [imageInfoMessage, setImageInfoMessage] = useState("");
     const [imageInfoIcon, setImageInfoIcon] = useState(faMeh);
@@ -25,8 +22,6 @@ const HallerDenEpisodePage = () => {
     useEffect(() => {
         setEpisode(getEpisodeById(id))
         if (episode.movieName) {
-            const name = getImageName(episode.movieName);
-            setTrimmedMovieName(name);
             setImageInfo(setImageInfoClass, setImageInfoMessage, setImageInfoIcon, episode);
             document.title = 'Höll den? | ' + episode.movieName;
         }
@@ -44,7 +39,7 @@ const HallerDenEpisodePage = () => {
                         <div className={"hd-episode-card-wrapper text-white"}>
                             <div className={"card opacity-5"}>
                                 <div className={"hd-episode-image-wrapper position-relative"}>
-                                    <img src={hallerDenImages[trimmedMovieName]} className="card-img-top" alt={`Movie ${episode.movieName}`}/>
+                                    <img src={TMDB_GET_IMAGE_URL + "w1280" + movie.backdrop_path} className="card-img-top" alt={`Movie ${episode.movieName}`}/>
                                     <div className={`hd-episode-image-info font-weight-bold ${imageInfoClass}`}>
                                         <FontAwesomeIcon icon={imageInfoIcon} size="2x" aria-label={imageInfoMessage}/>
                                     </div>
@@ -57,9 +52,16 @@ const HallerDenEpisodePage = () => {
                                             <span className={"me-2"}>-</span>
                                             <span>TMDb betyg: {movie.vote_average}</span>
                                         </p>
-                                        <p className={"m-0"}><a lang="en" aria-label={"International movie database"} href={IMDB_URL + movie.imdb_id}><FontAwesomeIcon icon={faImdb} size="2x"/></a></p>
                                     </div>
-                                    <p className={"small fst-italic"}><FontAwesomeIcon icon={faQuoteRight} size="2x" className={"me-2"}/>{movie.overview}</p>
+                                    <div className={"row mb-3"}>
+                                        <div className={"col-12 col-lg-3"}>
+                                            <img className={"w-100 mb-3 mb-lg-0"} src={TMDB_GET_IMAGE_URL + "w500" + movie.poster_path} alt={"Filmaffisch"}/>
+                                        </div>
+                                        <div className={"col-12 col-lg-9"}>
+                                            <p className={"small fst-italic px-2"}><FontAwesomeIcon icon={faQuoteRight} size="2x" className={"me-2"}/>{movie.overview}</p>
+                                            <p className={"m-0"}><a lang="en" aria-label={"International movie database"} href={IMDB_URL + movie.imdb_id}><FontAwesomeIcon icon={faImdb} size="2x"/></a></p>
+                                        </div>
+                                    </div>
                                     {
                                         episode.opinions &&
                                         episode.opinions.map(opinion => <EpisodePageOpinions key={opinion.participantId} opinion={opinion}/>)
