@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {hallerDenImages} from '../../haller-den-data/images';
-import {getImageName, getParticipantById, setImageInfo, TMDB_GET_MOVIE_URL, TMDB_KEY} from "../../haller-den-data/serviceFunctions";
+import {fetchAndSetMovie, getImageName, getParticipantById, setImageInfo} from "../../haller-den-data/serviceFunctions";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGrinHearts, faFrown, faMeh} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
@@ -20,9 +20,7 @@ const EpisodeCard = ({episode}) => {
     }, [episode]);
 
     useEffect(() => {
-        fetch(TMDB_GET_MOVIE_URL + episode.id + TMDB_KEY)
-            .then(response => response.json())
-            .then(data => setMovie(data));
+        fetchAndSetMovie(episode.id, setMovie);
     }, [episode.id]);
 
     return episode && movie ?

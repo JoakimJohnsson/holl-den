@@ -27,6 +27,39 @@ export const getImageName = (movieName) => {
     return imageName.toLowerCase().replace(/[^a-z]+/g, "");
 }
 
+// Fetch TMDb information about the movie.
+// Available fields:
+// adult: false
+// backdrop_path: "/zSRtn62QmYlqUhznOjRJC0yKEzE.jpg"
+// belongs_to_collection: null
+// budget: 27000000
+// genres: Array
+// homepage: ""
+// id: 2614
+// imdb_id: "tt0093260"
+// original_language: "en"
+// original_title: "Innerspace"
+// overview: "Jack Putter..."
+// popularity: 16.057
+// poster_path: "/9xUBzgWfjCPN3FKVWTAtNiNr7mw.jpg"
+// production_companies: Array
+// production_countries: Array
+// release_date: "1987-06-30"
+// revenue: 25893810
+// runtime: 120
+// spoken_languages: Array
+// status: "Released"
+// tagline: ""
+// title: "24-timmarsjakten"
+// video: false
+// vote_average: 6.8
+// vote_count: 975
+export const fetchAndSetMovie = (id, setMovie) => {
+    fetch(TMDB_GET_MOVIE_URL + id + TMDB_KEY)
+        .then(response => response.json())
+        .then(data => setMovie(data));
+}
+
 export const hallerDenStatus = (episode) => {
     let trueCount = 0;
     let falseCount = 0;

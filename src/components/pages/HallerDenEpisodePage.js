@@ -1,5 +1,11 @@
 import React, {useEffect, useState} from 'react';
-import {getEpisodeById, getImageName, IMDB_URL, setImageInfo, TMDB_GET_MOVIE_URL, TMDB_KEY} from "../../haller-den-data/serviceFunctions";
+import {
+    fetchAndSetMovie,
+    getEpisodeById,
+    getImageName,
+    IMDB_URL,
+    setImageInfo
+} from "../../haller-den-data/serviceFunctions";
 import EpisodePageOpinions from "../haller-den-components/EpisodePageOpinions";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link, useParams} from "react-router-dom";
@@ -26,38 +32,8 @@ const HallerDenEpisodePage = () => {
         }
     }, [id, episode]);
 
-    // Fetch TMDb information about the movie.
-    // Available fields:
-    // adult: false
-    // backdrop_path: "/zSRtn62QmYlqUhznOjRJC0yKEzE.jpg"
-    // belongs_to_collection: null
-    // budget: 27000000
-    // genres: Array
-    // homepage: ""
-    // id: 2614
-    // imdb_id: "tt0093260"
-    // original_language: "en"
-    // original_title: "Innerspace"
-    // overview: "Jack Putter..."
-    // popularity: 16.057
-    // poster_path: "/9xUBzgWfjCPN3FKVWTAtNiNr7mw.jpg"
-    // production_companies: Array
-    // production_countries: Array
-    // release_date: "1987-06-30"
-    // revenue: 25893810
-    // runtime: 120
-    // spoken_languages: Array
-    // status: "Released"
-    // tagline: ""
-    // title: "24-timmarsjakten"
-    // video: false
-    // vote_average: 6.8
-    // vote_count: 975
-
     useEffect(() => {
-        fetch(TMDB_GET_MOVIE_URL + id + TMDB_KEY)
-            .then(response => response.json())
-            .then(data => setMovie(data));
+        fetchAndSetMovie(id, setMovie);
     }, [id]);
 
     return episode && movie ? (
@@ -75,13 +51,14 @@ const HallerDenEpisodePage = () => {
                                 </div>
                                 <div className={"card-body"}>
                                     <h2 className={"card-title mb-0 "}>{episode.movieName} </h2>
-                                    <p className={"card-sub-title"}>
-                                        <span className={"me-2"}>{episode.movieYear}</span>
-                                        <span className={"me-2"}>-</span>
-                                        <a className={"me-2"} href={IMDB_URL + movie.imdb_id}><FontAwesomeIcon icon={faImdb} className={"me-2"}/>IMDb</a>
-                                        <span className={"me-2"}>-</span>
-                                        <span>TMDb betyg: {movie.vote_average}</span>
-                                    </p>
+                                    <div className={"d-flex justify-content-between align-items-center mb-2"}>
+                                        <p className={"card-sub-title m-0"}>
+                                            <span className={"me-2"}>{episode.movieYear}</span>
+                                            <span className={"me-2"}>-</span>
+                                            <span>TMDb betyg: {movie.vote_average}</span>
+                                        </p>
+                                        <p className={"m-0"}><a lang="en" aria-label={"International movie database"} href={IMDB_URL + movie.imdb_id}><FontAwesomeIcon icon={faImdb} size="2x"/></a></p>
+                                    </div>
                                     <p className={"small fst-italic"}><FontAwesomeIcon icon={faQuoteRight} size="2x" className={"me-2"}/>{movie.overview}</p>
                                     {
                                         episode.opinions &&
