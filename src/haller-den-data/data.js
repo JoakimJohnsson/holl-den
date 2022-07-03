@@ -492,7 +492,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 22,
+        "id": 4982,
         "movieName": "American gangster",
         "movieYear": "2007",
         "opinions": [
@@ -511,7 +511,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 23,
+        "id": 37136,
         "movieName": "Den nakna pistolen",
         "movieYear": "1988",
         "opinions": [
@@ -530,7 +530,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 24,
+        "id": 550,
         "movieName": "Fight Club",
         "movieYear": "1999",
         "opinions": [
@@ -553,7 +553,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 25,
+        "id": 9388,
         "movieName": "Thank you for smoking",
         "movieYear": "2005",
         "opinions": [
@@ -572,7 +572,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 26,
+        "id": 9522,
         "movieName": "Wedding Crashers",
         "movieYear": "2005",
         "opinions": [
@@ -591,7 +591,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 27,
+        "id": 4995,
         "movieName": "Boogie Nights",
         "movieYear": "1997",
         "opinions": [
@@ -614,7 +614,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 28,
+        "id": 175,
         "movieName": "Det Stora Blå",
         "movieYear": "1988",
         "opinions": [
@@ -637,7 +637,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 29,
+        "id": 15,
         "movieName": "Citizen Kane",
         "movieYear": "1941",
         "opinions": [
@@ -656,7 +656,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 30,
+        "id": 629,
         "movieName": "The Usual Suspects",
         "movieYear": "1995",
         "opinions": [
@@ -675,7 +675,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 31,
+        "id": 1089,
         "movieName": "Point Break",
         "movieYear": "1991",
         "opinions": [
@@ -698,7 +698,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 32,
+        "id": 153,
         "movieName": "Lost in Translation",
         "movieYear": "2003",
         "opinions": [
@@ -717,7 +717,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 33,
+        "id": 807,
         "movieName": "Seven",
         "movieYear": "1995",
         "opinions": [
@@ -744,7 +744,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 34,
+        "id": 9475,
         "movieName": "En Kvinnas Doft",
         "movieYear": "1992",
         "opinions": [
@@ -771,7 +771,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 35,
+        "id": 9473,
         "movieName": "South Park - Bigger, longer & uncut",
         "movieYear": "1999",
         "opinions": [
@@ -790,7 +790,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 36,
+        "id": 19181,
         "movieName": "Sällskapsresan 2 - Snowroller",
         "movieYear": "1985",
         "opinions": [
@@ -817,7 +817,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 37,
+        "id": 1885,
         "movieName": "Karate Kid",
         "movieYear": "1984",
         "opinions": [
@@ -844,7 +844,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 38,
+        "id": 274,
         "movieName": "När Lammen Tystnar",
         "movieYear": "1991",
         "opinions": [
@@ -867,7 +867,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 39,
+        "id": 13,
         "movieName": "Forrest Gump",
         "movieYear": "1994",
         "opinions": [
@@ -890,7 +890,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 40,
+        "id": 16003,
         "movieName": "Jägarna",
         "movieYear": "1996",
         "opinions": [
@@ -909,7 +909,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 41,
+        "id": 11031,
         "movieName": "This is Spinal Tap",
         "movieYear": "1984",
         "opinions": [
@@ -932,7 +932,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 42,
+        "id": 88,
         "movieName": "Dirty Dancing",
         "movieYear": "1987",
         "opinions": [
@@ -951,7 +951,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 43,
+        "id": 603,
         "movieName": "The Matrix",
         "movieYear": "1999",
         "opinions": [
@@ -974,7 +974,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 44,
+        "id": 1572,
         "movieName": "Die Hard - With a vengeance",
         "movieYear": "1995",
         "opinions": [
@@ -997,7 +997,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 45,
+        "id": 510,
         "movieName": "Gökboet",
         "movieYear": "1975",
         "opinions": [
@@ -1024,7 +1024,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 46,
+        "id": 10719,
         "movieName": "Elf",
         "movieYear": "2003",
         "opinions": [
@@ -1051,7 +1051,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 47,
+        "id": 39382,
         "movieName": "Ivanhoe",
         "movieYear": "1982",
         "opinions": [
@@ -1070,7 +1070,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 48,
+        "id": 7446,
         "movieName": "Tropic Thunder",
         "movieYear": "2008",
         "opinions": [
@@ -1093,7 +1093,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 49,
+        "id": 95,
         "movieName": "Armageddon",
         "movieYear": "1998",
         "opinions": [
@@ -1116,7 +1116,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 50,
+        "id": 194,
         "movieName": "Amelie från Montmartre",
         "movieYear": "2001",
         "opinions": [
@@ -1139,7 +1139,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 51,
+        "id": 1103,
         "movieName": "Flykten Från New York",
         "movieYear": "1981",
         "opinions": [
@@ -1162,7 +1162,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 52,
+        "id": 712,
         "movieName": "Fyra Bröllop och en Begravning",
         "movieYear": "1994",
         "opinions": [
@@ -1189,7 +1189,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 53,
+        "id": 1933,
         "movieName": "The Others",
         "movieYear": "2001",
         "opinions": [
@@ -1216,7 +1216,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 54,
+        "id": 9336,
         "movieName": "Polisskolan",
         "movieYear": "1984",
         "opinions": [
@@ -1243,7 +1243,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 55,
+        "id": 984,
         "movieName": "Dirty Harry",
         "movieYear": "1971",
         "opinions": [
@@ -1266,7 +1266,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 56,
+        "id": 9602,
         "movieName": "En Prins i New York",
         "movieYear": "1988",
         "opinions": [
@@ -1289,7 +1289,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 57,
+        "id": 34683,
         "movieName": "Änglagård",
         "movieYear": "1992",
         "opinions": [
@@ -1312,7 +1312,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 58,
+        "id": 14,
         "movieName": "American Beauty",
         "movieYear": "1999",
         "opinions": [
@@ -1339,7 +1339,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 59,
+        "id": 279,
         "movieName": "Amadeus",
         "movieYear": "1984",
         "opinions": [
@@ -1362,7 +1362,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 60,
+        "id": 11072,
         "movieName": "Det Våras För Sheriffen",
         "movieYear": "1974",
         "opinions": [
@@ -1385,7 +1385,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 61,
+        "id": 2108,
         "movieName": "Breakfast Club",
         "movieYear": "1985",
         "opinions": [
@@ -1404,7 +1404,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 62,
+        "id": 9802,
         "movieName": "The Rock",
         "movieYear": "1996",
         "opinions": [
@@ -1427,7 +1427,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 63,
+        "id": 11634,
         "movieName": "Fucking Åmål",
         "movieYear": "1998",
         "opinions": [
@@ -1458,7 +1458,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 64,
+        "id": 9277,
         "movieName": "Blåsningen",
         "movieYear": "1973",
         "opinions": [
@@ -1485,7 +1485,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 65,
+        "id": 641,
         "movieName": "Requiem For a Dream",
         "movieYear": "2000",
         "opinions": [
@@ -1508,7 +1508,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 66,
+        "id": 90,
         "movieName": "Snuten i Hollywood",
         "movieYear": "1984",
         "opinions": [
@@ -1531,7 +1531,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 67,
+        "id": 597,
         "movieName": "Titanic",
         "movieYear": "1997",
         "opinions": [
@@ -1554,7 +1554,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 68,
+        "id": 563,
         "movieName": "Starship Troopers",
         "movieYear": "1997",
         "opinions": [
@@ -1577,7 +1577,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 69,
+        "id": 627,
         "movieName": "Trainspotting",
         "movieYear": "1996",
         "opinions": [
@@ -1604,7 +1604,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 70,
+        "id": 4232,
         "movieName": "Scream",
         "movieYear": "1996",
         "opinions": [
@@ -1627,7 +1627,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 71,
+        "id": 115,
         "movieName": "The Big Lebowski",
         "movieYear": "1998",
         "opinions": [
@@ -1650,7 +1650,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 72,
+        "id": 680,
         "movieName": "Pulp Fiction",
         "movieYear": "1987",
         "opinions": [
@@ -1673,7 +1673,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 73,
+        "id": 544,
         "movieName": "Den Där Mary",
         "movieYear": "1998",
         "opinions": [
@@ -1696,7 +1696,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 74,
+        "id": 489,
         "movieName": "Good Will Hunting",
         "movieYear": "1997",
         "opinions": [
@@ -1715,7 +1715,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 75,
+        "id": 197,
         "movieName": "Braveheart",
         "movieYear": "1995",
         "opinions": [
@@ -1738,7 +1738,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 76,
+        "id": 114,
         "movieName": "Pretty Woman",
         "movieYear": "1990",
         "opinions": [
@@ -1761,7 +1761,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 77,
+        "id": 18,
         "movieName": "Det Femte Elementet",
         "movieYear": "1997",
         "opinions": [
@@ -1784,7 +1784,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 78,
+        "id": 105,
         "movieName": "Tillbaka Till Framtiden",
         "movieYear": "1985",
         "opinions": [
@@ -1807,7 +1807,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 79,
+        "id": 268,
         "movieName": "Batman",
         "movieYear": "1989",
         "opinions": [
@@ -1830,7 +1830,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 80,
+        "id": 2280,
         "movieName": "Big",
         "movieYear": "1988",
         "opinions": [
@@ -1853,7 +1853,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 81,
+        "id": 860,
         "movieName": "Wargames",
         "movieYear": "1983",
         "opinions": [
@@ -1872,7 +1872,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 82,
+        "id": 954,
         "movieName": "Mission Impossible",
         "movieYear": "1996",
         "opinions": [
@@ -1895,7 +1895,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 83,
+        "id": 9603,
         "movieName": "Clueless",
         "movieYear": "1996",
         "opinions": [
@@ -1918,7 +1918,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 84,
+        "id": 5503,
         "movieName": "Jagad",
         "movieYear": "1993",
         "opinions": [
@@ -1941,7 +1941,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 85,
+        "id": 218,
         "movieName": "Terminator",
         "movieYear": "1984",
         "opinions": [
@@ -1964,7 +1964,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 86,
+        "id": 280,
         "movieName": "Terminator 2: Judgement Day",
         "movieYear": "1991",
         "opinions": [
@@ -1991,7 +1991,7 @@ export const Episodes = [
         ]
     },
     {
-        "id": 87,
+        "id": 2062,
         "movieName": "Ratatouille",
         "movieYear": "2007",
         "opinions": [
