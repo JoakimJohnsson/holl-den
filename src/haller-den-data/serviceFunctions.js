@@ -23,7 +23,6 @@ export const getParticipantInitials = (participantId) => {
 
 export const getImageName = (movieName) => {
     let imageName = movieName.replace('å', 'a').replace('ä', 'a').replace('ö', 'o').replace('Å', 'a').replace('Ä', 'a').replace('Ö', 'o');
-    console.log("imagename", imageName.toLowerCase().replace(/[^a-z]+/g, ""));
     return imageName.toLowerCase().replace(/[^a-z]+/g, "");
 }
 
@@ -57,7 +56,10 @@ export const getImageName = (movieName) => {
 export const fetchAndSetMovie = (id, setMovie) => {
     fetch(TMDB_GET_MOVIE_URL + id + TMDB_KEY)
         .then(response => response.json())
-        .then(data => setMovie(data));
+        .then(data => setMovie(data))
+        .catch((error) => {
+            console.error('Error:', error);
+        });
 }
 
 export const hallerDenStatus = (episode) => {

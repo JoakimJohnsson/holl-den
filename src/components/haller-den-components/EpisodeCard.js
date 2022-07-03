@@ -11,7 +11,7 @@ const EpisodeCard = ({episode}) => {
     const movieImage = hallerDenImages[trimmedMovieName];
     const [imageInfoClass, setImageInfoClass] = useState("");
     const [imageInfoMessage, setImageInfoMessage] = useState("");
-    const [imageInfoIcon, setImageInfoIcon] = useState("meh");
+    const [imageInfoIcon, setImageInfoIcon] = useState(faMeh);
     const mapLength = episode.opinions.length;
     const [movie, setMovie] = useState({});
 
