@@ -55,7 +55,15 @@ export const getImageName = (movieName) => {
 // vote_count: 975
 export const fetchAndSetMovie = (id, setMovie) => {
     fetch(TMDB_GET_MOVIE_URL + id + TMDB_KEY)
-        .then(response => response.json())
+        .then(
+            (response) => {
+                if (response.status === 200) {
+                    return response.json();
+                } else {
+                    throw new Error();
+                }
+            }
+        )
         .then(data => setMovie(data))
         .catch((error) => {
             console.error('Error:', error);
