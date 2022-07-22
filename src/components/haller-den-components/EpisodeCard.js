@@ -27,7 +27,7 @@ const EpisodeCard = ({episode}) => {
                     <Link className={"text-decoration-none"} to={`/${episode.id}`}>
                         <div className={"card h-100"}>
                             <div className={"hd-episode-image-wrapper position-relative"}>
-                                <img src={TMDB_GET_IMAGE_URL + "w780" + movie.backdrop_path} className="card-img-top" alt={`Movie ${episode.movieName}`}/>
+                                {movie.backdrop_path && <img src={TMDB_GET_IMAGE_URL + "w780" + movie.backdrop_path} className="card-img-top" alt={`Movie ${episode.movieName}`}/>}
                                 <div className={`hd-episode-image-info font-weight-bold ${imageInfoClass}`}>
                                     <FontAwesomeIcon icon={imageInfoIcon} size="2x" aria-label={imageInfoMessage}/>
                                 </div>
