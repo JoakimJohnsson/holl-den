@@ -2008,6 +2008,205 @@ export const Episodes = [
                 "opinion": true
             }
         ]
+    },
+    {
+        "id": 628,
+        "movieName": "En vampyrs bekännelse",
+        "movieYear": "1994",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 2,
+                "opinion": false
+            },
+            {
+                "participantId": 3,
+                "opinion": false
+            },
+            {
+                "participantId": 4,
+                "opinion": false
+            }
+        ]
+    },
+    {
+        "id": 621,
+        "movieName": "Grease",
+        "movieYear": "1978",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 3,
+                "opinion": true
+            },
+            {
+                "participantId": 4,
+                "opinion": false
+            }
+        ]
+    },
+    {
+        "id": 111,
+        "movieName": "Scarface",
+        "movieYear": "1983",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 2,
+                "opinion": false
+            },
+            {
+                "participantId": 3,
+                "opinion": true
+            },
+            {
+                "participantId": 4,
+                "opinion": true
+            }
+        ]
+    },
+    {
+        "id": 613,
+        "movieName": "Undergången",
+        "movieYear": "2004",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 2,
+                "opinion": true
+            },
+            {
+                "participantId": 3,
+                "opinion": true
+            },
+            {
+                "participantId": 4,
+                "opinion": true
+            }
+        ]
+    },
+    {
+        "id": 361743,
+        "movieName": "Top Gun - Maverick",
+        "movieYear": "2022",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 2,
+                "opinion": false
+            },
+            {
+                "participantId": 3,
+                "opinion": true
+            },
+            {
+                "participantId": 4,
+                "opinion": false
+            }
+        ]
+    },
+    {
+        "id": 583,
+        "movieName": "Life of Brian",
+        "movieYear": "1979",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 2,
+                "opinion": true
+            },
+            {
+                "participantId": 3,
+                "opinion": true
+            },
+            {
+                "participantId": 4,
+                "opinion": true
+            }
+        ]
+    },
+    {
+        "id": 12405,
+        "movieName": "Slumdog Millionaire",
+        "movieYear": "2008",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 2,
+                "opinion": true
+            },
+            {
+                "participantId": 3,
+                "opinion": true
+            },
+            {
+                "participantId": 4,
+                "opinion": false
+            }
+        ]
+    },
+    {
+        "id": 694,
+        "movieName": "The Shining",
+        "movieYear": "1980",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 3,
+                "opinion": true
+            },
+            {
+                "participantId": 4,
+                "opinion": true
+            }
+        ]
+    },
+    {
+        "id": 1597,
+        "movieName": "Meet the Parents",
+        "movieYear": "2000",
+        "opinions": [
+            {
+                "participantId": 1,
+                "opinion": true
+            },
+            {
+                "participantId": 2,
+                "opinion": false
+            },
+            {
+                "participantId": 3,
+                "opinion": true
+            },
+            {
+                "participantId": 4,
+                "opinion": false
+            }
+        ]
     }
 ]
 
