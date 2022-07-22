@@ -39,7 +39,7 @@ const HallerDenEpisodePage = () => {
                         <div className={"hd-episode-card-wrapper text-white"}>
                             <div className={"card opacity-5"}>
                                 <div className={"hd-episode-image-wrapper position-relative"}>
-                                    <img src={TMDB_GET_IMAGE_URL + "w1280" + movie.backdrop_path} className="card-img-top" alt={`Movie ${episode.movieName}`}/>
+                                    {movie.backdrop_path && <img src={TMDB_GET_IMAGE_URL + "w1280" + movie.backdrop_path} className="card-img-top" alt={`Movie ${episode.movieName}`}/>}
                                     <div className={`hd-episode-image-info font-weight-bold ${imageInfoClass}`}>
                                         <FontAwesomeIcon icon={imageInfoIcon} size="2x" aria-label={imageInfoMessage}/>
                                     </div>
@@ -55,7 +55,8 @@ const HallerDenEpisodePage = () => {
                                     </div>
                                     <div className={"row mb-3"}>
                                         <div className={"col-12 col-lg-3"}>
-                                            <img className={"w-100 mb-3 mb-lg-0"} src={TMDB_GET_IMAGE_URL + "w500" + movie.poster_path} alt={"Filmaffisch"}/>
+                                            {movie.poster_path && <img className={"w-100 mb-3 mb-lg-0"} src={TMDB_GET_IMAGE_URL + "w500" + movie.poster_path} alt={"Filmaffisch"}/>}
+
                                         </div>
                                         <div className={"col-12 col-lg-9"}>
                                             <p className={"small fst-italic px-2"}><FontAwesomeIcon icon={faQuoteRight} size="2x" className={"me-2"}/>{movie.overview}</p>
