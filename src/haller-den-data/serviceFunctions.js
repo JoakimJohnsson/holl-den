@@ -83,6 +83,10 @@ export const hallerDenStatus = (episode) => {
     }
 }
 
+export const roundToOneDecimal = (number) => {
+    return Math.round(number * 10) / 10;
+}
+
 export const clearInput = (setFilter) => {
     setFilter('')
 }

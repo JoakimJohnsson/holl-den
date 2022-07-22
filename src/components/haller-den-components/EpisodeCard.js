@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {fetchAndSetMovie, getParticipantById, setImageInfo, TMDB_GET_IMAGE_URL} from "../../haller-den-data/serviceFunctions";
+import {fetchAndSetMovie, getParticipantById, roundToOneDecimal, setImageInfo, TMDB_GET_IMAGE_URL} from "../../haller-den-data/serviceFunctions";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGrinHearts, faFrown, faMeh} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
@@ -38,7 +38,7 @@ const EpisodeCard = ({episode}) => {
                                     <p className={"card-sub-title"}>
                                         <span className={"me-2"}>{episode.movieYear}</span>
                                         <span className={"me-2"}>-</span>
-                                        <span>TMDb betyg: {movie.vote_average}</span>
+                                        <span>TMDb betyg: {roundToOneDecimal(movie.vote_average)}</span>
                                     </p>
                                     <p className={"text-uppercase mb-1 fw-bold"}>Medverkande:</p>
                                     <p>
