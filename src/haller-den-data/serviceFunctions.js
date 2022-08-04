@@ -87,8 +87,8 @@ export const roundToOneDecimal = (number) => {
     return Math.round(number * 10) / 10;
 }
 
-export const clearInput = (setFilter) => {
-    setFilter('')
+export const clearInput = (setSearchParams, searchParams) => {
+    setSearchParams({filter: '', sort: searchParams.get('sort')})
 }
 
 export const setImageInfo = (setImageInfoClass, setImageInfoMessage, setImageInfoIcon, episode) => {

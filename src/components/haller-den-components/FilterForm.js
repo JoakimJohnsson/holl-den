@@ -22,7 +22,7 @@ const FilterForm = ({filter, searchParams, setSearchParams, sortType, reverse, s
                     />
                     {filter !== '' ?
                         <div className="input-group-append">
-                            <button className="btn btn-primary" onClick={() => clearInput(setSearchParams)}>
+                            <button className="btn btn-primary" onClick={() => clearInput(setSearchParams, searchParams)}>
                                 <FontAwesomeIcon icon={faTimes} className={"me-2"}/>
                                 Rensa
                             </button>
