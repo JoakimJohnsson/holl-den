@@ -7,7 +7,7 @@ import {
 } from "../../haller-den-data/serviceFunctions";
 import EpisodePageOpinions from "../haller-den-components/EpisodePageOpinions";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {Link, useParams} from "react-router-dom";
+import {useParams, useNavigate} from "react-router-dom";
 import {faChevronLeft, faMeh, faQuoteRight} from "@fortawesome/free-solid-svg-icons";
 import {faImdb} from "@fortawesome/free-brands-svg-icons";
 
@@ -31,11 +31,16 @@ const HallerDenEpisodePage = () => {
         fetchAndSetMovie(id, setMovie);
     }, [id]);
 
+
+    const navigate = useNavigate();
+
     return episode && movie ? (
             <main className="container py-5 text-black">
                 <div className={"row"}>
                     <div className={"col-12 col-sm-8 offset-sm-2"}>
-                        <Link className={"btn btn-primary mb-3"} to={"/"}><FontAwesomeIcon icon={faChevronLeft} className={"me-2"}/>Tillbaka</Link>
+
+                        <button className={"btn btn-primary mb-3"} onClick={() => navigate(-1)}><FontAwesomeIcon icon={faChevronLeft} className={"me-2"}/>Tillbaka</button>
+
                         <div className={"hd-episode-card-wrapper text-white"}>
                             <div className={"card opacity-5"}>
                                 <div className={"hd-episode-image-wrapper position-relative"}>
